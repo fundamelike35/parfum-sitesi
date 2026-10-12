@@ -12,59 +12,140 @@
 <body>
 
     <header>
-        <h1>Maison de Parfum</h1>
+        <h1 class="brand-title">Maison de Parfum</h1>
+        <p class="brand-subtitle">Haute Parfumerie</p>
         
-        <!-- Özel Tasarım Parfüm Şişesi -->
-        <div class="perfume-container">
-            <!-- Toz Pembe Fiyonk Kapak -->
-            <div class="bow-cap">🎀</div>
-            
-            <!-- Kare / Zarif Cam Şişe -->
-            <div class="bottle">
-                <div class="liquid"></div>
-                <span class="bottle-label">Maison de Parfum</span>
+        <!-- Cam Parfüm Şişesi ve Püskürme Efekti -->
+        <div class="perfume-display">
+            <!-- Fışkıran Koku Esansı ve Işıltılar -->
+            <div class="spray-mist">
+                <span class="mist-particle p1"></span>
+                <span class="mist-particle p2"></span>
+                <span class="mist-particle p3"></span>
+                <span class="sparkle-star s1">✦</span>
+                <span class="sparkle-star s2">✨</span>
+                <span class="sparkle-star s3">✦</span>
             </div>
 
-            <!-- Dökülen Sıvı ve Işıltı Efektleri -->
-            <div class="drip"></div>
-            <div class="sparkles">
-                <span class="sparkle s1">✨</span>
-                <span class="sparkle s2">✦</span>
-                <span class="sparkle s3">✨</span>
-                <span class="sparkle s4">✦</span>
+            <!-- Fiyonk ve Şişe -->
+            <div class="bow-tag">🎀</div>
+            <div class="glass-bottle">
+                <div class="glass-reflection"></div>
+                <div class="perfume-liquid"></div>
+                <div class="luxury-label">Maison de Parfum</div>
             </div>
         </div>
     </header>
 
-    <!-- Ürün Kategorileri -->
-    <section class="container">
-        <div class="product-card">
-            <span class="badge">Kadın</span>
-            <h2>Esinti</h2>
-            <p>Çiçeksi ve pudralı pembe kokular.</p>
-            <span class="price">750 TL</span>
-            <span class="btn-explore">İncele</span>
-        </div>
+    <!-- Kadın / Erkek / Unisex Koleksiyon Kartları -->
+    <section class="section-container">
+        <h2 class="section-title">Özel Koleksiyonlar</h2>
+        <div class="cards-grid">
+            
+            <div class="luxury-card">
+                <span class="card-tag">Kadın</span>
+                <h3>Rose & Vanilla</h3>
+                <p> Gül ve Tatlı vanilya dokunuşlarıyla zarif bir imza.</p>
+                <div class="card-footer">
+                    <span class="card-price">750 TL</span>
+                    <button class="btn-detail">Keşfet</button>
+                </div>
+            </div>
 
-        <div class="product-card">
-            <span class="badge">Erkek</span>
-            <h2>Asil</h2>
-            <p>Kalıcı kokular.</p>
-            <span class="price">850 TL</span>
-            <span class="btn-explore">İncele</span>
-        </div>
+            <div class="luxury-card">
+                <span class="card-tag">Erkek</span>
+                <h3>Amber & Wood</h3>
+                <p>Amber esintisi.</p>
+                <div class="card-footer">
+                    <span class="card-price">850 TL</span>
+                    <button class="btn-detail">Keşfet</button>
+                </div>
+            </div>
 
-        <div class="product-card">
-            <span class="badge">Unisex</span>
-            <h2>Hale</h2>
-            <p>Büyüleyici vanilya ve amber dokunuşu.</p>
-            <span class="price">920 TL</span>
-            <span class="btn-explore">İncele</span>
+            <div class="luxury-card">
+                <span class="card-tag">Unisex</span>
+                <h3>Velvet Breeze</h3>
+                <div class="card-footer">
+                    <span class="card-price">920 TL</span>
+                    <button class="btn-detail">Keşfet</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Ders Konusu: Koku Piramidi (Sırasız Liste) -->
+    <section class="section-container bg-soft">
+        <h2 class="section-title">Koku Piramidi</h2>
+        <div class="notes-grid">
+            <div class="note-card">
+                    <li>Taze Bergamot</li>
+                    <li>Pembe Biber</li>
+                    <li>Şeftali Çiçeği</li>
+                </ul>
+            </div>
+            <div class="note-card">
+                <h4>Kalp Notaları</h4>
+                <ul>
+                    <li>Isparta Gülü</li>
+                    <li>Beyaz Yasemin</li>
+                    <li>Pudra Esansı</li>
+                </ul>
+            </div>
+            <div class="note-card">
+                <h4>Dip Notaları</h4>
+                <ul>
+                    <li>Sıcak Amber</li>
+                    <li>Sedir Ağacı</li>
+                    <li>Vanilya</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ders Konusu: Fiyat ve Özellik Tablosu -->
+    <section class="section-container">
+        <h2 class="section-title">Karşılaştırma Tablosu</h2>
+        <div class="table-container">
+            <table class="luxury-table">
+                <thead>
+                    <tr>
+                        <th>Parfüm</th>
+                        <th>Tür</th>
+                        <th>Hacim</th>
+                        <th>Kalıcılık</th>
+                        <th>Fiyat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rose & Vanilla</td>
+                        <td>Kadın EDP</td>
+                        <td>50 ml</td>
+                        <td>12 Saat</td>
+                        <td>750 TL</td>
+                    </tr>
+                    <tr>
+                        <td>Amber & Wood</td>
+                        <td>Erkek EDP</td>
+                        <td>100 ml</td>
+                        <td>24 Saat</td>
+                        <td>850 TL</td>
+                    </tr>
+                    <tr>
+                        <td>Velvet Breeze</td>
+                        <td>Unisex EDP</td>
+                        <td>100 ml</td>
+                        <td>18 Saat</td>
+                        <td>920 TL</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Maison de Parfum. Tüm hakları saklıdır.</p>
+        <p>&copy; 2026 Aura Parfüm. Tüm hakları saklıdır.</p>
     </footer>
 
 </body>
