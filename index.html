@@ -3,27 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lüks Parfüm Koleksiyonu</title>
+    <title>Maison de Parfum - Lüks Koleksiyon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>Maison de Parfum</h1>
-        <p>Eşsiz Kokuların Baş Yapıtı</p>
+        
+        <!-- Özel Tasarım Parfüm Şişesi -->
+        <div class="perfume-container">
+            <!-- Toz Pembe Fiyonk Kapak -->
+            <div class="bow-cap">🎀</div>
+            
+            <!-- Kare / Zarif Cam Şişe -->
+            <div class="bottle">
+                <div class="liquid"></div>
+                <span class="bottle-label">Maison de Parfum</span>
+            </div>
+
+            <!-- Dökülen Sıvı ve Işıltı Efektleri -->
+            <div class="drip"></div>
+            <div class="sparkles">
+                <span class="sparkle s1">✨</span>
+                <span class="sparkle s2">✦</span>
+                <span class="sparkle s3">✨</span>
+                <span class="sparkle s4">✦</span>
+            </div>
+        </div>
     </header>
 
+    <!-- Ürün Kategorileri -->
     <section class="container">
         <div class="product-card">
-            <h2>Kadın Parfümü</h2>
-            <p>Çiçeksi ve kalıcı ferahlık.</p>
+            <span class="badge">Kadın</span>
+            <h2>Esinti</h2>
+            <p>Çiçeksi ve pudralı pembe kokular.</p>
             <span class="price">750 TL</span>
+            <span class="btn-explore">İncele</span>
         </div>
 
         <div class="product-card">
-            <h2>Erkek Parfümü</h2>
-            <p>Kalıcı ferahlık.</p>
+            <span class="badge">Erkek</span>
+            <h2>Asil</h2>
+            <p>Kalıcı kokular.</p>
             <span class="price">850 TL</span>
+            <span class="btn-explore">İncele</span>
+        </div>
+
+        <div class="product-card">
+            <span class="badge">Unisex</span>
+            <h2>Hale</h2>
+            <p>Büyüleyici vanilya ve amber dokunuşu.</p>
+            <span class="price">920 TL</span>
+            <span class="btn-explore">İncele</span>
         </div>
     </section>
 
