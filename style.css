@@ -1,0 +1,214 @@
+/* Genel Sayfa Tasarımı */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fcf9f8;
+    color: #4a403b;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(180deg, #f7ebe8 0%, #fcf9f8 100%);
+    color: #5c4033;
+    padding: 40px 20px 20px 20px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Alex Brush', cursive;
+    font-size: 3.8rem;
+    font-weight: normal;
+    color: #ba7b84;
+}
+
+header p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #7a6863;
+    font-size: 1.3rem;
+    margin-top: 5px;
+}
+
+/* PARFÜM ŞİŞESİ VE EFEKTLER */
+.perfume-container {
+    position: relative;
+    width: 140px;
+    margin: 30px auto 0 auto;
+}
+
+.bow-cap {
+    font-size: 2.8rem;
+    line-height: 1;
+    margin-bottom: -10px;
+    position: relative;
+    z-index: 3;
+    filter: drop-shadow(0 2px 4px rgba(230, 180, 190, 0.5));
+}
+
+.bottle {
+    width: 100px;
+    height: 110px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #e8d0cb;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(186, 123, 132, 0.15);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.liquid {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(180deg, #f7d6d0 0%, #e2a8b2 100%);
+    opacity: 0.85;
+}
+
+.bottle-label {
+    position: relative;
+    z-index: 4;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    color: #5c4033;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3px 10px;
+    border-radius: 4px;
+    border: 1px solid #e8d0cb;
+}
+
+.drip {
+    width: 4px;
+    height: 60px;
+    background: linear-gradient(180deg, #e2a8b2, rgba(226, 168, 178, 0));
+    margin: 0 auto;
+    border-radius: 2px;
+    animation: dripAnim 2.5s infinite ease-in-out;
+}
+
+@keyframes dripAnim {
+    0% { height: 0px; opacity: 1; }
+    70% { height: 80px; opacity: 0.8; }
+    100% { height: 100px; opacity: 0; }
+}
+
+.sparkles {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    pointer-events: none;
+}
+
+.sparkle {
+    position: absolute;
+    color: #dba3ab;
+    font-size: 1.2rem;
+    animation: sparkleFade 2s infinite ease-in-out;
+}
+
+.s1 { top: 10px; left: 10px; animation-delay: 0.2s; }
+.s2 { top: 30px; right: 15px; animation-delay: 0.7s; }
+.s3 { top: 50px; left: 25px; animation-delay: 1.2s; }
+.s4 { top: 70px; right: 30px; animation-delay: 1.6s; }
+
+@keyframes sparkleFade {
+    0%, 100% { opacity: 0; transform: scale(0.6); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* ŞIK LİSTE TASARIMI */
+.notes-section, .table-section {
+    padding: 30px 20px;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #5c4033;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.notes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.note-box {
+    background: #ffffff;
+    border: 1px solid #f2e3e0;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 5px 15px rgba(186, 123, 132, 0.05);
+}
+
+.note-box h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #ba7b84;
+    margin-top: 0;
+}
+
+.note-box ul {
+    list-style-type: '🌸 '; /* Çiçek simgeli liste */
+    text-align: left;
+    padding-left: 20px;
+    color: #7a6863;
+    line-height: 1.8;
+}
+
+/* ŞIK TABLO TASARIMI */
+.table-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(186, 123, 132, 0.08);
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #f7ebe8;
+    color: #66524c;
+    font-size: 0.95rem;
+}
+
+th {
+    background-color: #f7ebe8;
+    color: #ba7b84;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #fcf1ef; /* Dokununca tatlı pembe vurgu */
+}
+
+footer {
+    background-color: #f7ebe8;
+    color: #7a6863;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    border-top: 1px solid #ebd8d4;
+     }
